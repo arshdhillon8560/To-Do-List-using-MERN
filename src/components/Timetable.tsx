@@ -37,7 +37,7 @@ const Timetable = () => {
     if (!newEntry.day || !newEntry.time || !newEntry.activity) return;
 
     try {
-      const response = await fetch('http://localhost:5000/api/timetables', {
+      const response = await fetch('https://to-do-list-using-mern-zm8v.vercel.app/api/timetables', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ const Timetable = () => {
 
   const deleteEntry = async (id: string) => {
     try {
-      await fetch(`http://localhost:5000/api/timetables/${id}`, {
+      await fetch(`https://to-do-list-using-mern-zm8v.vercel.app/api/timetables/${id}`, {
         method: 'DELETE',
       });
       setEntries(entries.filter(entry => entry._id !== id));

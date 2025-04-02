@@ -17,7 +17,7 @@ const TodoList = () => {
 
   const fetchTodos = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/todos');
+      const response = await fetch('https://to-do-list-using-mern-zm8v.vercel.app/api/todos');
       const data = await response.json();
       setTodos(data);
     } catch (error) {
@@ -30,7 +30,7 @@ const TodoList = () => {
     if (!newTodo.trim()) return;
 
     try {
-      const response = await fetch('http://localhost:5000/api/todos', {
+      const response = await fetch('https://to-do-list-using-mern-zm8v.vercel.app/api/todos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const TodoList = () => {
 
   const deleteTodo = async (id: string) => {
     try {
-      await fetch(`http://localhost:5000/api/todos/${id}`, {
+      await fetch(`https://to-do-list-using-mern-zm8v.vercel.app/api/todos/${id}`, {
         method: 'DELETE',
       });
       setTodos(todos.filter(todo => todo._id !== id));
