@@ -24,7 +24,7 @@ const Timetable = () => {
 
   const fetchEntries = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/timetables');
+      const response = await fetch('https://to-do-list-using-mern-zm8v.vercel.app/api/timetables');
       const data = await response.json();
       setEntries(data);
     } catch (error) {
