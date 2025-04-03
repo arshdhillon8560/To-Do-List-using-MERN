@@ -17,9 +17,7 @@ This project is a simple To-Do List application built using the MERN stack (Mong
     ```bash
     cd To-Do-List-MERN
     ```
-```markdown
-Run the following command to install the server dependencies:
-```
+3. Run the following command to install the server dependencies:
     ```bash
     cd server
     npm install
@@ -41,7 +39,7 @@ Run the following command to install the server dependencies:
     cd ../client
     npm start
     ```
-3. Open your browser and navigate to `http://localhost:3000`.
+3. Open your browser and navigate to `https://to-do-list-using-mern.vercel.app/`.
 
 ## Technologies Used
 - **MongoDB**: Database for storing tasks.
